@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>EShar</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+  	<servlet-name>FoodModulePostServlet</servlet-name>
+  	<servlet-class>eshare.controller.FoodModulePostServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FoodModulePostServlet</servlet-name>
+  	<url-pattern>/FoodModulePostServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>FoodModuleViewServlet</servlet-name>
+  	<servlet-class>eshare.controller.FoodModuleViewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FoodModuleViewServlet</servlet-name>
+  	<url-pattern>/FoodModuleViewServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>FoodModuleFinalTransactionServlet</servlet-name>
+  	<servlet-class>eshare.controller.FoodModuleFinalTransactionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FoodModuleFinalTransactionServlet</servlet-name>
+  	<url-pattern>/FoodModuleFinalTransactionServlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
